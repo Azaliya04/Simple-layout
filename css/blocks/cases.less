@@ -1,0 +1,230 @@
+// main: ../index.less
+
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-width: 1366px;
+  height: 616px;
+
+  background-color: @grey;
+
+  .container {
+    &__name {
+      position: absolute;
+      top: 73px;
+      width: 107px;
+      height: 37px;
+
+      font-family: @font-family;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: @normal;
+      font-style: @normal;
+      line-height: @normal;
+      letter-spacing: @normal;
+      color: @darkblue;
+    }
+
+    .arrow-mobile {
+      display: none;
+    }
+
+    .blocks {
+      display: flex;
+      &__cases {
+        position: relative;
+        margin-top: 140px;
+        width: 352px;
+        height: 397px;
+
+        border-radius: 10px;
+        box-shadow: 0 2px 14px 0 rgba(15, 33, 53, 0.11);
+        background-color: #ffffff;
+      }
+
+      &__date {
+        position: absolute;
+        width: 71px;
+        height: 18px;
+        margin: 20px 0 0 25px;
+
+        font-family: @font-family;
+        font-size: 14px;
+        font-weight: @normal;
+        font-stretch: @normal;
+        font-style: @normal;
+        line-height: @normal;
+        letter-spacing: @normal;
+        color: @text-color;
+      }
+
+      &__text {
+        position: absolute;
+        top: 49px;
+        left: 25px;
+        margin-right: auto;
+
+        font-family: @font-family;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: @normal;
+        font-style: @normal;
+        line-height: 1.5;
+        letter-spacing: @normal;
+        color: @darkblue;
+      }
+
+      .cases1 h5 {
+        top: 211px;
+      }
+
+      .article {
+        position: absolute;
+        width: 302px;
+        height: 80px;
+
+        font-family: @font-family;
+        font-size: 14px;
+        font-weight: @normal;
+        font-stretch: @normal;
+        font-style: @normal;
+        line-height: 1.43;
+        letter-spacing: @normal;
+        color: @darkblue;
+      }
+
+      &__line {
+        height: 1px;
+        width: 352px;
+        margin-top: 333px;
+
+        color: @grey;
+      }
+
+      .contunie a {
+        position: absolute;
+        width: 136px;
+        height: 24px;
+        margin: 17px 0 0 25px;
+
+        font-family: @font-family;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: @normal;
+        font-style: @normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: @text-color;
+      }
+
+      .arrow img {
+        width: 39px;
+        height: 11.3px;
+
+        color: @text-color;
+        transform: rotate(180deg);
+      }
+
+      .cases1,
+      .cases2 {
+        margin-right: 55px;
+      }
+
+      .cases1 img {
+        border-radius: 10px 10px 0 0;
+      }
+
+      .cases1 &__date {
+        position: absolute;
+        margin: 20px 0 0 24px;
+      }
+
+      .cases1 .blocks__line {
+        margin-top: 170px;
+      }
+
+      .cases2 .article {
+        margin: 157px 0 0 25px;
+      }
+
+      .cases3 .article {
+        margin: 109px 0 0 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+  .main {
+    max-width: 1365px;
+    min-width: 1000px;
+    .container {
+      .blocks {
+        &__cases {
+          width: 250px;
+        }
+
+        &__text {
+          font-weight: 13px;
+          left: 20px;
+        }
+
+        .cases1 h5 {
+          top: 180px;
+        }
+
+        &__line {
+          width: 250px;
+        }
+
+        .cases1 .blocks__line {
+          margin-top: 224px;
+        }
+
+        .article {
+          font-size: 14px;
+          margin-left: 20px;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .main {
+    max-width: 999px;
+    min-width: 400px;
+    height: 616px;
+
+    .container {
+      margin: 0;
+      padding: 0;
+
+      .arrow-mobile {
+        right: 85px;
+        display: block;
+        width: 39px;
+        height: 11px;
+        object-fit: contain;
+        background-color: grey;
+        z-index: 100;
+      }
+
+      .blocks__cases {
+        width: 300px;
+        height: 397px;
+        border-radius: 10px;
+
+        .blocks__line {
+          width: 300px;
+        }
+      }
+    }
+    .cases2,
+    .cases3 {
+      display: none;
+    }
+  }
+}

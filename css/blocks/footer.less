@@ -1,0 +1,191 @@
+// main: ../index.less
+
+footer {
+  min-width: 1366px;
+  height: 340px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
+  .left {
+    width: 523px;
+    position: relative;
+    display: grid;
+    &__follow {
+      position: absolute;
+      top: 75px;
+      height: 64px;
+
+      font-family: @font-family;
+      font-size: 22px;
+      font-weight: @normal;
+      font-stretch: @normal;
+      font-style: @normal;
+      line-height: 1.45;
+      letter-spacing: @normal;
+      color: #0f2135;
+    }
+
+    &__information {
+      position: absolute;
+      width: 583px;
+      height: 20px;
+      top: 129px;
+
+      font-family: @font-family;
+      font-size: 14px;
+      font-weight: @normal;
+      font-stretch: @normal;
+      font-style: @normal;
+      line-height: 1.43;
+      letter-spacing: @normal;
+      color: @text-color;
+      top: 204px;
+    }
+  }
+  .right {
+    width: 524px;
+    position: relative;
+    #email {
+      position: absolute;
+      height: 44px;
+      top: 82px;
+      width: 524px;
+      height: 44px;
+
+      border-radius: 8px;
+      border: solid 1px @text-color;
+      background-color: @white;
+    }
+    #email:hover {
+      border: solid 1px @pink;
+    }
+    #email:checked {
+      border: solid 1px @dark-pink;
+      color: @darkblue;
+    }
+
+    input::placeholder {
+      width: 92px;
+      height: 19px;
+      font-family: @font-family;
+      font-size: 16px;
+      font-weight: @normal;
+      font-stretch: @normal;
+      font-style: @normal;
+      line-height: @normal;
+      letter-spacing: @normal;
+      color: @text-color;
+      padding: 12px 0 0 20px;
+    }
+    .checkbox {
+      position: absolute;
+      top: 153px;
+    }
+
+    .checkbox label {
+      width: 262px;
+      height: 19px;
+
+      font-family: @font-family;
+      font-size: 16px;
+      font-weight: @normal;
+      font-stretch: @normal;
+      font-style: @normal;
+      line-height: @normal;
+      letter-spacing: @normal;
+      color: @darkblue;
+    }
+
+    #check {
+      width: 19px;
+      height: 19px;
+
+      border-radius: 3px;
+      border: solid 1px @text-color;
+    }
+
+    .checkbox a {
+      color: @pink;
+    }
+
+    button[type="submit"] {
+      position: absolute;
+      top: 216px;
+      width: 183px;
+      height: 44px;
+
+      border-radius: 8px;
+      background-color: @pink;
+    }
+
+    button[type="submit"]:hover {
+      background-color: @dark-pink;
+      color: @white;
+    }
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+  footer {
+    max-width: 1365px;
+    min-width: 1000px;
+    #email {
+      width: 400px;
+      height: 44px;
+    }
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  footer {
+    max-width: 999px;
+    min-width: 400px;
+    height: 521px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    .left {
+      width: 100%;
+      &__follow {
+        left: 30%;
+        top: 45px;
+        width: 340px;
+        height: 128px;
+        font-size: 22px;
+      }
+
+      &__information {
+        left: 30%;
+        top: 180px;
+        width: 340px;
+        height: 40px;
+        font-size: 14px;
+      }
+    }
+    .right {
+      width: 100%;
+      #email {
+        left: 30%;
+        position: absolute;
+        top: 261px;
+        width: 340px;
+        height: 44px;
+        border-radius: 8px;
+      }
+      .checkbox {
+        left: 30%;
+        top: 332px;
+        width: 262px;
+        height: 19px;
+        font-size: 16px;
+      }
+      button[type="submit"] {
+        top: 383px;
+        left: 30%;
+      }
+    }
+  }
+}

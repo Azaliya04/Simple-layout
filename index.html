@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Test</title>
+    <script defer src="js/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.svg" alt="logotip" class="header__logo" />
+      <img
+        src="img/combined-shape.png"
+        srcset="img/combined-shape@2x.png 2x, img/combined-shape@3x.png 3x"
+        class="Combined-Shape"
+      />
+      <img src="img/x-mark-xxl.png" class="closeIcon" />
+
+      <nav class="navigation">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#cases">Кейсы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="board">
+      <img
+        src="img/wpapers-ru-white-and-blue.jpg"
+        srcset="
+          img/wpapers-ru-white-and-blue@2x.jpg 2x,
+          img/wpapers-ru-white-and-blue@3x.jpg 3x
+        "
+        class="board__img"
+        alt="background"
+      />
+      <h2 class="board__h2">Мы – лучшая компания</h2>
+      <span class="board__text"
+        >Предоставляем любые услуги в любом бизнесе в день обращения</span
+      >
+      <button class="board_btn"><a href="#">Заказать</a></button>
+    </div>
+    <main class="main" id="cases">
+      <div class="container">
+        <div class="container__name">Кейсы</div>
+        <div class="blocks">
+          <div class="blocks__cases cases1">
+            <img src="img/352x163.jpg" alt="Роскосмос" />
+            <span class="blocks__date">13 августа</span>
+            <h5 class="blocks__text">
+              Минтруд предложил обсудить сокращение рабочей недели до четырех
+              дней
+            </h5>
+            <hr class="blocks__line" />
+            <div class="contunie">
+              <a href="#">Читать полностью</a>
+              <div class="arrow">
+                <img src="img/keyboard_backspace-24px.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="blocks__cases cases2">
+            <span class="blocks__date">13 августа</span>
+            <h5 class="blocks__text">
+              Антимонопольщики возбудили дело против «Яндекса» и «Кинопоиска»
+              из-за «Игры престолов»
+            </h5>
+            <p class="article">
+              Московское управление ФАС возбудило дело об административном
+              нарушении в отношении онлайн-кинотеатра «Кинопоиск» и интернет…
+            </p>
+            <hr class="blocks__line" />
+            <div class="contunie">
+              <a href="#">Читать полностью</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="blocks__cases cases3">
+            <span class="blocks__date">13 августа</span>
+            <h5 class="blocks__text">
+              Курс доллара опустился ниже 65 рублей
+            </h5>
+            <p class="article">
+              Курс доллара к рублю на Московской бирже https://ria.ru/
+              20190813/1557460014.html? utm_source=yxnews&utm_medium op ,
+              свидетельствуют данные торгов. В последний раз курс доллара
+              находился…
+            </p>
+            <hr class="blocks__line" />
+            <div class="contunie">
+              <a href="#">Читать полностью</a>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="left">
+        <div class="left__follow">
+          Следите за нашей компанией, подпишитесь на рассылку, мы не будем
+          навязчивыми
+        </div>
+        <div class="left__information">
+          Новости выходят один раз в неделю в самом лучшем формате
+        </div>
+      </div>
+      <div class="right">
+        <input type="email" id="email" required placeholder="Ваш email" /><label
+          for="email"
+        ></label>
+        <div class="checkbox">
+          <input type="checkbox" id="check" / >
+          <label for="check"> Согласен с условиями
+        </div>
+        <button type="submit">Подписаться</button>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+// main: ../index.less
+
+.header {
+  position: relative;
+  min-width: 1366px;
+  height: 100px;
+
+  box-shadow: 0 2px 6px 0 rgba(15, 33, 53, 0.2);
+  background-color: @darkblue;
+
+  &__logo {
+    position: absolute;
+    top: 23px;
+    left: 50px;
+    width: 140px;
+    height: 54px;
+    object-fit: contain;
+
+    color: @pink;
+  }
+}
+
+.Combined-Shape {
+  position: absolute;
+  object-fit: contain;
+  width: 30px;
+  height: 21px;
+  display: none;
+
+  background-color: @darkblue;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.navigation {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+    margin-right: 50px;
+  }
+
+  li a:hover {
+    color: @pink;
+  }
+
+  li a {
+    position: relative;
+    padding-right: 54px;
+
+    font-family: @font-family;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: @normal;
+    font-style: @normal;
+    line-height: @normal;
+    letter-spacing: @normal;
+    color: @white;
+  }
+
+  li:last-child {
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1365px) {
+  .header {
+    max-width: 1365px;
+    min-width: 1000px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 999px) {
+  .header {
+    max-width: 999px;
+    min-width: 400px;
+    height: 70px;
+
+    &__logo {
+      width: 110px;
+      height: 42px;
+      top: 13px;
+      left: 30px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 61px;
+    left: 35px;
+  }
+
+  ul li {
+    padding-bottom: 50px;
+  }
+
+  .navigation li a {
+    font-size: 23px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .Combined-Shape {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 26px;
+  }
+
+  .mobileNav {
+    width: 100%;
+    height: 380px;
+    background-color: @darkblue;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 23px;
+    right: 26px;
+    width: 25px;
+  }
+}
